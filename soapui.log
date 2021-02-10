@@ -1,0 +1,71 @@
+2021-02-10 13:06:35,666 WARN  [SoapUI] Missing folder [C:\Users\RachikSharma\Desktop\SDET\RestAPI\ProjectRest\my-app\ext] for external libraries
+2021-02-10 13:06:35,900 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\RachikSharma\soapui-settings.xml]
+2021-02-10 13:06:37,486 INFO  [WsdlProject] Loaded project from [file:/C:/Users/RachikSharma/Desktop/SDET/RestAPI/ProjectRest/my-app/REST-Project-2021-soapui-project.xml]
+2021-02-10 13:06:38,117 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [REST Project 1]
+2021-02-10 13:06:38,121 INFO  [SoapUITestCaseRunner] Running Project [REST Project 1], runType = SEQUENTIAL
+2021-02-10 13:06:38,160 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TC001]
+2021-02-10 13:06:38,173 INFO  [SoapUITestCaseRunner] running step [Properties]
+2021-02-10 13:06:38,226 INFO  [SoapUITestCaseRunner] running step [GetToken]
+2021-02-10 13:06:39,806 INFO  [log] 200
+2021-02-10 13:06:39,846 INFO  [log] All good as status code is valid
+2021-02-10 13:06:39,849 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2021-02-10 13:06:39,849 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion Status] has status VALID
+2021-02-10 13:06:39,851 INFO  [SoapUITestCaseRunner] running step [Login]
+2021-02-10 13:06:40,228 INFO  [log] 200
+2021-02-10 13:06:40,229 INFO  [log] All good as status code is valid
+2021-02-10 13:06:40,230 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2021-02-10 13:06:40,233 INFO  [SoapUITestCaseRunner] running step [GetUserDetails]
+2021-02-10 13:06:40,608 INFO  [log] 200
+2021-02-10 13:06:40,608 INFO  [log] All good as status code is valid
+2021-02-10 13:06:40,610 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2021-02-10 13:06:40,613 INFO  [SoapUITestCaseRunner] running step [GetProductList]
+2021-02-10 13:06:43,263 ERROR [SoapUI] An error occurred [NCNames cannot be empty], see error log for details
+2021-02-10 13:06:43,267 ERROR [errorlog] nu.xom.IllegalNameException: NCNames cannot be empty
+nu.xom.IllegalNameException: NCNames cannot be empty
+	at nu.xom.Verifier.throwIllegalNameException(Verifier.java:147)
+	at nu.xom.Verifier.checkNCName(Verifier.java:121)
+	at nu.xom.Element._setLocalName(Element.java:832)
+	at nu.xom.Element.<init>(Element.java:112)
+	at nu.xom.Element.<init>(Element.java:76)
+	at com.eviware.soapui.impl.rest.support.handlers.JsonXmlSerializer$CustomElement.<init>(JsonXmlSerializer.java:1744)
+	at com.eviware.soapui.impl.rest.support.handlers.JsonXmlSerializer.newElement(JsonXmlSerializer.java:1090)
+	at com.eviware.soapui.impl.rest.support.handlers.JsonXmlSerializer.processJSONObject(JsonXmlSerializer.java:1255)
+	at com.eviware.soapui.impl.rest.support.handlers.JsonXmlSerializer.processJSONValue(JsonXmlSerializer.java:1325)
+	at com.eviware.soapui.impl.rest.support.handlers.JsonXmlSerializer.processJSONObject(JsonXmlSerializer.java:1256)
+	at com.eviware.soapui.impl.rest.support.handlers.JsonXmlSerializer.processJSONValue(JsonXmlSerializer.java:1325)
+	at com.eviware.soapui.impl.rest.support.handlers.JsonXmlSerializer.processJSONObject(JsonXmlSerializer.java:1256)
+	at com.eviware.soapui.impl.rest.support.handlers.JsonXmlSerializer.processJSONValue(JsonXmlSerializer.java:1325)
+	at com.eviware.soapui.impl.rest.support.handlers.JsonXmlSerializer.processJSONArray(JsonXmlSerializer.java:1143)
+	at com.eviware.soapui.impl.rest.support.handlers.JsonXmlSerializer.processJSONValue(JsonXmlSerializer.java:1317)
+	at com.eviware.soapui.impl.rest.support.handlers.JsonXmlSerializer.processJSONObject(JsonXmlSerializer.java:1256)
+	at com.eviware.soapui.impl.rest.support.handlers.JsonXmlSerializer.write(JsonXmlSerializer.java:735)
+	at com.eviware.soapui.impl.rest.support.handlers.JsonXmlSerializer.write(JsonXmlSerializer.java:690)
+	at com.eviware.soapui.impl.rest.support.handlers.JsonMediaTypeHandler.createXmlRepresentation(JsonMediaTypeHandler.java:69)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.BaseHttpResponse.getContentAsXml(BaseHttpResponse.java:462)
+	at com.eviware.soapui.impl.wsdl.teststeps.RestTestRequestStep.propertyChange(RestTestRequestStep.java:485)
+	at java.beans.PropertyChangeSupport.fire(PropertyChangeSupport.java:335)
+	at java.beans.PropertyChangeSupport.firePropertyChange(PropertyChangeSupport.java:327)
+	at java.beans.PropertyChangeSupport.firePropertyChange(PropertyChangeSupport.java:263)
+	at com.eviware.soapui.model.support.AbstractModelItem.notifyPropertyChanged(AbstractModelItem.java:90)
+	at com.eviware.soapui.impl.support.AbstractHttpRequest.setResponse(AbstractHttpRequest.java:896)
+	at com.eviware.soapui.impl.wsdl.teststeps.RestTestRequest.setResponse(RestTestRequest.java:140)
+	at com.eviware.soapui.impl.wsdl.teststeps.RestTestRequestStep.run(RestTestRequestStep.java:927)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:239)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:52)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:152)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:139)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-02-10 13:06:43,496 INFO  [log] 200
+2021-02-10 13:06:43,498 INFO  [log] All good as status code is valid
+2021-02-10 13:06:43,503 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2021-02-10 13:06:43,503 INFO  [SoapUITestCaseRunner] running step [Logout]
+2021-02-10 13:06:43,875 INFO  [log] 200
+2021-02-10 13:06:43,876 INFO  [log] All good as status code is valid
+2021-02-10 13:06:43,878 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2021-02-10 13:06:43,885 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TC001], time taken: 4399ms, status: FINISHED
+2021-02-10 13:06:43,886 INFO  [SoapUITestCaseRunner] Project [REST Project 1] finished with status [FINISHED] in 5756ms
